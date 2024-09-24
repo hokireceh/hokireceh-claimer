@@ -29,12 +29,12 @@ class Base:
     def create_banner(self, game_name: str):
         # Create banner with game name
         banner = f"""{Fore.GREEN}
-╭╮╭┳┳╮╱╱╱╱╭━╮╱╱╱╱╱╱╱╱╭╮
-┃╰╯┃╭╯╭━━╮┃╋┣┳┳━┳┳━┳━┫╰╮
-┃╭╮┃╰╮╰━━╯┃╭┫╭┫╋┣┫┻┫━┫╭┫
-╰╯╰┻┻╯╱╱╱╱╰╯╰╯╰┳╯┣━┻━┻━╯
-╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯
-                                                                
+  _   _       _    _                   _     
+ | | | | ___ | | _(_)_ __ ___  ___ ___| |__  
+ | |_| |/ _ \| |/ / | '__/ _ \/ __/ _ \ '_ \ 
+ |  _  | (_) |   <| | | |  __/ (_|  __/ | | |
+ |_| |_|\___/|_|\_\_|_|  \___|\___\___|_| |_|
+                                                                              
     Auto Claim for {game_name} - Mini Apps
     Author  : Team Gabut
     Github  : https://github.com/hokireceh
