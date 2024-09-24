@@ -5,5 +5,5 @@ A Python package for automatically claiming airdrops.
 ## Installation
 
 ```bash
-pip install hokireceh_claimer
+pip install hokireceh-claimer
 ```
