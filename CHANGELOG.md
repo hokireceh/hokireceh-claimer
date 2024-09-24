@@ -18,4 +18,4 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
-- Initial release of the Hokireceh Claimer package.
+- Initial release of the Smart Airdrop Claimer package.
