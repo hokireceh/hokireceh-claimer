@@ -28,7 +28,6 @@ class Base:
 
     def create_banner(self, game_name: str):
         # Create banner with game name
-        
         banner = f"""{Fore.GREEN}
 ╭╮╭┳┳╮╱╱╱╱╭━╮╱╱╱╱╱╱╱╱╭╮
 ┃╰╯┃╭╯╭━━╮┃╋┣┳┳━┳┳━┳━┫╰╮
