@@ -10,7 +10,6 @@ init(autoreset=True)
 
 class Base:
     def __init__(self):
-        # Initialize colorama styles
         self.red = Fore.LIGHTRED_EX
         self.yellow = Fore.LIGHTYELLOW_EX
         self.green = Fore.LIGHTGREEN_EX
@@ -20,17 +19,13 @@ class Base:
         self.reset = Style.RESET_ALL
 
     def file_path(self, file_name: str):
-        # Get the directory of the file that called this method
-        caller_dir = os.path.dirname(
-            os.path.abspath(sys._getframe(1).f_code.co_filename)
-        )
+        caller_dir = os.path.dirname(os.path.abspath(sys._getframe(1).f_code.co_filename))
         return os.path.join(caller_dir, file_name)
 
     def create_line(self, length=50):
-    return "-" * length
+        return "-" * length
 
     def create_banner(self, game_name: str):
-        # Create banner with game name
         banner = f"""{Fore.GREEN}
 ╭╮╭┳┳╮╱╱╱╱╭━╮╱╱╱╱╱╱╱╱╭╮
 ┃╰╯┃╭╯╭━━╮┃╋┣┳┳━┳┳━┳━┫╰╮
@@ -46,7 +41,6 @@ class Base:
         return banner
 
     def get_config(self, config_file: str, config_name: str):
-        # Get config from config file with error handling
         try:
             with open(config_file, "r") as file:
                 config = json.load(file)
@@ -56,10 +50,8 @@ class Base:
             return False
 
     def clear_terminal(self):
-        # For Windows
         if os.name == "nt":
             _ = os.system("cls")
-        # For macOS and Linux
         else:
             _ = os.system("clear")
 
@@ -83,7 +75,7 @@ class Base:
 
         try:
             response = requests.get(url=url, proxies=proxies, auth=auth)
-            response.raise_for_status()  # Raises an error for bad status codes
+            response.raise_for_status()
             actual_ip = response.json().get("ip")
             self.log(f"{self.green}Actual IP Address: {self.white}{actual_ip}")
             return actual_ip
@@ -104,6 +96,5 @@ class Base:
                 f"{self.red}Check proxy format: {self.white}http://user:pass@ip:port - {e}"
             )
             return None
-
 
 base = Base()
