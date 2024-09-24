@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="hokireceh_claimer",
+    name="hokireceh-claimer",
     version="0.1.2",
-    description="A package for automatically claiming airdrops.",
+    description="A package for airdrop automation.",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
-    author="Hokireceh",
+    author="Hoki Receh",
     author_email="ads.hokireceh@gmail.com",
-    url="https://github.com/hokireceh/hokireceh_claimer",
+    url="https://github.com/hokireceh/hokireceh-claimer",
     packages=find_packages(),
     install_requires=[
         "colorama",
