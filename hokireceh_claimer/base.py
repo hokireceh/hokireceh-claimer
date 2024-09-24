@@ -31,8 +31,7 @@ class Base:
 ┃╰╯┃╭╯╭━━╮┃╋┣┳┳━┳┳━┳━┫╰╮
 ┃╭╮┃╰╮╰━━╯┃╭┫╭┫╋┣┫┻┫━┫╭┫
 ╰╯╰┻┻╯╱╱╱╱╰╯╰╯╰┳╯┣━┻━┻━╯
-╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯
-                                                                
+╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯                                
     Auto Claim for {game_name} - Mini Apps
     Author  : Team Gabut
     Github  : https://github.com/hokireceh
